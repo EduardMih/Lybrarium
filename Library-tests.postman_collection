@@ -1,0 +1,671 @@
+{
+	"info": {
+		"_postman_id": "516cafe7-e96e-4906-aa70-1d3e86df6251",
+		"name": "Library",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Comics - GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/v1/comics",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"comics"
+					]
+				},
+				"description": "Return all comics"
+			},
+			"response": []
+		},
+		{
+			"name": "Comics - POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"series\":\"Another series\",\r\n    \"number\":\"100\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/v1/comics",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"comics"
+					]
+				},
+				"description": "Add a new comic"
+			},
+			"response": []
+		},
+		{
+			"name": "Comics - PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"series\":\"Another series uppdated\",\r\n    \"number\":\"100\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/v1/comics/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"comics",
+						"1"
+					]
+				},
+				"description": "Update comic"
+			},
+			"response": []
+		},
+		{
+			"name": "Comics - Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/v1/comics/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"comics",
+						"1"
+					]
+				},
+				"description": "Delete comic"
+			},
+			"response": []
+		},
+		{
+			"name": "Clients - GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/v1/clients",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"clients"
+					]
+				},
+				"description": "Get all clients"
+			},
+			"response": []
+		},
+		{
+			"name": "Clinet - Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Andrei\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/v1/clients",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"clients"
+					]
+				},
+				"description": "Add new client"
+			},
+			"response": []
+		},
+		{
+			"name": "Clients - Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Marius\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/v1/clients/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"clients",
+						"1"
+					]
+				},
+				"description": "Update client"
+			},
+			"response": []
+		},
+		{
+			"name": "Clients - Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/v1/clients/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"clients",
+						"1"
+					]
+				},
+				"description": "Delete client"
+			},
+			"response": []
+		},
+		{
+			"name": "Books - GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Book2\",\r\n    \"author\":\"book2's author\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/v1/books",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"books"
+					]
+				},
+				"description": "Get all books"
+			},
+			"response": []
+		},
+		{
+			"name": "Books - POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Amazing new book\",\r\n    \"author\":\"Star\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/v1/books",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"books"
+					]
+				},
+				"description": "Add new book"
+			},
+			"response": []
+		},
+		{
+			"name": "Book - PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Book1\",\r\n    \"author\":\"books1's author\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/v1/books/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"books",
+						"1"
+					]
+				},
+				"description": "Update Book"
+			},
+			"response": []
+		},
+		{
+			"name": "Books - Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Amazing new book\",\r\n    \"author\":\"Star\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/v1/books/3",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"books",
+						"3"
+					]
+				},
+				"description": "Delete a book"
+			},
+			"response": []
+		},
+		{
+			"name": "Rent Book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"itemId\":\"1\",\r\n    \"clientId\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/v1/rental/books",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"rental",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Return book",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"itemId\":\"1\",\r\n    \"clientId\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/v1/rental/books",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"rental",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rent ComicBook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"itemId\":\"1\",\r\n    \"clientId\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/v1/rental/comicBooks",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"rental",
+						"comicBooks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Return ComicBook",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"itemId\":\"1\",\r\n    \"clientId\":\"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/v1/rental/comicBooks",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"rental",
+						"comicBooks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search book by title",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/v1/books/search/title?s=amaz",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"books",
+						"search",
+						"title"
+					],
+					"query": [
+						{
+							"key": "s",
+							"value": "amaz"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search book by author",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/v1/books/search/author?s=st",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"books",
+						"search",
+						"author"
+					],
+					"query": [
+						{
+							"key": "s",
+							"value": "st"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search books by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/v1/books/search/id?s=2",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"books",
+						"search",
+						"id"
+					],
+					"query": [
+						{
+							"key": "s",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Comic Book by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/v1/comics/search/id?s=2",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"comics",
+						"search",
+						"id"
+					],
+					"query": [
+						{
+							"key": "s",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Comic Book by series",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/v1/comics/search/series?s=ega",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"comics",
+						"search",
+						"series"
+					],
+					"query": [
+						{
+							"key": "s",
+							"value": "ega"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Comic Book by number",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/v1/comics/search/number?s=292",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"comics",
+						"search",
+						"number"
+					],
+					"query": [
+						{
+							"key": "s",
+							"value": "292"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clients Search By name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/v1/clients/search/name?s=ei",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"clients",
+						"search",
+						"name"
+					],
+					"query": [
+						{
+							"key": "s",
+							"value": "ei"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client Search By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/v1/clients/search/id?s=2",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"v1",
+						"clients",
+						"search",
+						"id"
+					],
+					"query": [
+						{
+							"key": "s",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
